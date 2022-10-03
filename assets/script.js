@@ -1,29 +1,41 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+var data_types = document.getElementsByName('data_types');
+var if_else = document.getElementsByName('if_else');
+var arrays_in_JS = document.getElementsByName('arrays_in_JS'); 
+var string_vals_must = document.getElementsByName('string_vals_must');
+var useful_tools = document.getElementsByName('useful_tool');
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  
+  document.getElementsByClassName("mySlides")[n].removeAttribute("mySlidesInHiding");
+  //slides[n].setAttribute("class", "block");
 
-    
+
+  //const slides = document.getElementByClass("mySlides").attributes;
+  //slides[n].removeAttribute("mySlidesInHiding");
+
+};
+
+
+
+// document.getElementsByTagName("H1")[0].removeAttribute("class");
+
+
+function calculateScore() {
+
+let score = [''];
+
+if (data_types.value == "Alerts") {score.push("1");};
+
+if (if_else.value == "Parenthesis") {score.push("1");};
+
+if (arrays_in_JS.value == "All of the Above") {score.push("1");};
+
+if (string_vals_must.value == "Quotes") {score.push("1");};
+
+if (useful_tools.value == "Console.Log") {score.push("1");};
+
+console.log(score);
+
+return (score); 
+};
 

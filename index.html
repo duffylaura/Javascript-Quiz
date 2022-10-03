@@ -10,128 +10,103 @@
 <body>
 
     <div class="slideshow-container">
-    
-    <div class="mySlides">
+
+        <div class="landing">
+            <p>landing page</p>
+            <input type="radio" id="begin" name="begin" value="begin" onclick="showSlides(0)">
+            <label for="begin">Begin</label><br>
+        </div>
+
+        <div class="mySlides" class = "mySlidesInHiding">
         <form>
             <p>Commonly used data types do NOT include:</p>
-            <input type="radio" id="strings" name="data_types" value="strings">
+            
+            <input type="radio" id="strings" name="data_types" value="strings" onclick="showSlides(1), calculateScore()">
             <label for="strings">Strings</label><br>
-            <input type="radio" id="booleans" name="data_types" value="booleans">
+            
+            <input type="radio" id="booleans" name="data_types" value="booleans" onclick="showSlides(1), calculateScore()">
             <label for="booleans">Booleans</label><br>
-            <input type="radio" id="alerts" name="data_types" value="alerts">
-            <label for="alerts">JavaScript</label> <br>
-            <input type="radio" id="numbers" name="data_types" value="numbers">
+
+            <input type="radio" id="alerts" name="data_types" value="alerts"onclick="showSlides(1), calculateScore()">
+            <label for="alerts">Alerts</label> <br>
+
+            <input type="radio" id="numbers" name="data_types" value="numbers"onclick="showSlides(1), calculateScore()">
             <label for="numbers">Numbers</label>
         </form> 
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides" class = "mySlidesInHiding">
         <form>
             <p> The condition in an if/else statement is enclosed with ____________.</p>
-            <input type="radio" id="quotes" name="if_else" value="quotes">
+            <input type="radio" id="quotes" name="if_else" value="quotes"onclick="showSlides(2), calculateScore()">
             <label for="quotes">Quotes</label><br>
-            <input type="radio" id="curly_brackets" name="if_else" value="curly_brackets">
+            <input type="radio" id="curly_brackets" name="if_else" value="curly_brackets" onclick="showSlides(2), calculateScore()">
             <label for="curly_brackets">Curly Brackets</label><br>
-            <input type="radio" id="parenthesis" name="if_else" value="parenthesis">
+            <input type="radio" id="parenthesis" name="if_else" value="parenthesis"onclick="showSlides(2), calculateScore()">
             <label for="parenthesis">Parenthesis</label> <br>
-            <input type="radio" id="square_brackets" name="if_else" value="square_brackets">
+            <input type="radio" id="square_brackets" name="if_else" value="square_brackets"onclick="showSlides(2), calculateScore()">
             <label for="square_brackets">Square Brackets</label>
         </form> 
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides" class = "mySlidesInHiding">
         <form>
             <p> Arrays in JavaScript can be used to store ________________.</p>
-            <input type="radio" id="numbers_and_strings" name="arrays_in_JS" value="numbers_and_strings">
+            <input type="radio" id="numbers_and_strings" name="arrays_in_JS" value="numbers_and_strings"onclick="showSlides(3), calculateScore()">
             <label for="numbers_and_strings">Numbers and Strings</label><br>
-            <input type="radio" id="other_arrays" name="arrays_in_JS" value="other_arrays">
+            <input type="radio" id="other_arrays" name="arrays_in_JS" value="other_arrays"onclick="showSlides(3), calculateScore()">
             <label for="other_arrays">Other Arrays</label><br>
-            <input type="radio" id="booleans_2" name="arrays_in_JS" value="booleans_2">
+            <input type="radio" id="booleans_2" name="arrays_in_JS" value="booleans_2"onclick="showSlides(3), calculateScore()">
             <label for="booleans_2">Booleans</label> <br>
-            <input type="radio" id="all" name="arrays_in_JS" value="all">
+            <input type="radio" id="all" name="arrays_in_JS" value="all"onclick="showSlides(3), calculateScore()">
             <label for="all">All of the Above</label>
         </form> 
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides" class = "mySlidesInHiding">
         <form>
             <p> String values must be enclosed within ______________ when being assigned to variables.</p>
-            <input type="radio" id="commas" name="string_vals_must" value="commas">
+            <input type="radio" id="commas" name="string_vals_must" value="commas"onclick="showSlides(4), calculateScore()">
             <label for="commas">Commas</label><br>
-            <input type="radio" id="curly_brackets2" name="string_vals_must" value="curly_brackets2">
+            <input type="radio" id="curly_brackets2" name="string_vals_must" value="curly_brackets2" onclick="showSlides(4), calculateScore()">
             <label for="curly_brackets2">Curly Brackets</label><br>
-            <input type="radio" id="quotes2" name="string_vals_must" value="quotes2">
+            <input type="radio" id="quotes2" name="string_vals_must" value="quotes2" onclick="showSlides(4), calculateScore()">
             <label for="quotes2">Quotes</label> <br>
-            <input type="radio" id="parenthesis2" name="string_vals_must" value="parenthesis2">
+            <input type="radio" id="parenthesis2" name="string_vals_must" value="parenthesis2"onclick="showSlides(4), calculateScore()" >
             <label for="parenthesis2">Parenthesis</label>
         </form> 
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides" class = "mySlidesInHiding">
         <form>
             <p> A very useful tool used during development and debugging for printing content to the debugger is:</p>
-            <input type="radio" id="javascript" name="useful_tool" value="javascript">
+            
+            <input type="radio" id="javascript" name="useful_tool" value="javascript"onclick="showSlides(5), calculateScore()">
             <label for="javascript">JavaScript</label><br>
-            <input type="radio" id="terminal_bash" name="useful_tool" value="terminal_bash">
+            
+            <input type="radio" id="terminal_bash" name="useful_tool" value="terminal_bash" onclick="showSlides(5), calculateScore()">
             <label for="terminal_bash">Terminal/Bash</label><br>
-            <input type="radio" id="for_loops" name="useful_tool" value="for_loops">
+            
+            <input type="radio" id="for_loops" name="useful_tool" value="for_loops" onclick="showSlides(5), calculateScore()">
             <label for="for_loops">For Loops</label> <br>
-            <input type="radio" id="console_log" name="useful_tool" value="console_log">
+            
+            <input type="radio" id="console_log" name="useful_tool" value="console_log" onclick="showSlides(5), calculateScore()">
             <label for="console_log">Console.Log</label>
         </form> 
     </div>
 
-    <div class="mySlides">
+    <div class="mySlides" class = "mySlidesInHiding">
         <p> Results page </p>
+        <textarea
+            readonly
+            id = "score-results"
+            placeholder="Your Score:"
+            aria-label="Your Generated Score"
+        ></textarea>
     </div>
 
-    <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
-    <a class="next" onclick="plusSlides(1)">❯</a>
+<script src="assets/script.js"></script>
 
-    </div>
-
-    <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-    <span class="dot" onclick="currentSlide(5)"></span> 
-    <span class="dot" onclick="currentSlide(6)"></span> 
-    </div>
-
-    <!-- <script src="./assets/JS/questions.js"></script> 
-    <script src="./assets/JS/script.js"></script> --->
-
-    <script>
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            }
-
-    </script>
 
 </body>
 </html> 
