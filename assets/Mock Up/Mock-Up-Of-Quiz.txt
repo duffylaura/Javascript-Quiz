@@ -1,0 +1,74 @@
+Slide 1 
+
+View high scores <link in header on left>
+Time: 0 <timer in top right corner in header>
+Centered: 
+
+<h1> Coding Quiz Challenge </h1>
+<p> Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
+<button> Start Quiz </Button> 
+
+
+Slide 2: 
+
+75 seconds to begin with. 
+
+<h1> Commonly used data types do NOT include: </h1>
+Strings, Booleans, Alerts, Numbers
+
+Booleans is selected at 73 seconds
+Wrong! Is announced at bottom of page 
+Time drops to 58 seconds 
+
+
+
+Slide 3: 
+
+<h1> The condition in an if/else statement is enclosed with </h1>
+Quotes, Curly Brackets, Parenthesis, Square Brackets
+
+Parenthesis is selected at 57 seconds 
+Next slide says Correct! On the bottom 
+Next slide begins at 56 seconds 
+
+Slide 4: 
+
+<h1> Arrays in JavaScript can be used to store ________________. </h1>
+Numbers and Strings, Other Arrays, Booleans, All of the Above
+
+All of the above is selected 
+Correct is displayed at the bottom of the next slide 
+
+Slide 5: 
+
+<h1> String values must be enclosed within ______________ when being assigned to variables. </h1>
+Commas, Curly Brackets, Quotes, Parenthesis 
+
+Parenthesis is selected 
+Wrong! Is displayed at the bottom of the next slide 
+
+Slide 6: 
+
+<h1> A very useful tool used during development and debugging for printing content to the debugger is: </h1>
+JavaScript, Terminal/Bash, For Loops, Console.Log
+
+For Loops are selected
+Wrong! Is displayed on the next slide; Next slide is the end 
+
+Slide 7:
+
+Centered: 
+
+<h1> All done! </h1> 
+<p> Your final score is 22. </p>
+<p> Enter initials: </p> form box to enter initials // submit button 
+
+Enter in initials and hit submit 
+
+Slide 8: 
+
+<h1> High Scores </h1> 
+
+1.	AB – 22 displayed on a purple line 
+
+Button: Go Back (brings you to slide 1)	Button: Clear High Scores 

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title> Javascript Quiz </title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+    
+    <div class="mySlides">
+        <form>
+            <p>Commonly used data types do NOT include:</p>
+            <input type="radio" id="strings" name="data_types" value="strings">
+            <label for="strings">Strings</label><br>
+            <input type="radio" id="booleans" name="data_types" value="booleans">
+            <label for="booleans">Booleans</label><br>
+            <input type="radio" id="alerts" name="data_types" value="alerts">
+            <label for="alerts">JavaScript</label> <br>
+            <input type="radio" id="numbers" name="data_types" value="numbers">
+            <label for="numbers">Numbers</label>
+        </form> 
+    </div>
+
+    <div class="mySlides">
+        <form>
+            <p> The condition in an if/else statement is enclosed with ____________.</p>
+            <input type="radio" id="quotes" name="if_else" value="quotes">
+            <label for="quotes">Quotes</label><br>
+            <input type="radio" id="curly_brackets" name="if_else" value="curly_brackets">
+            <label for="curly_brackets">Curly Brackets</label><br>
+            <input type="radio" id="parenthesis" name="if_else" value="parenthesis">
+            <label for="parenthesis">Parenthesis</label> <br>
+            <input type="radio" id="square_brackets" name="if_else" value="square_brackets">
+            <label for="square_brackets">Square Brackets</label>
+        </form> 
+    </div>
+
+    <div class="mySlides">
+        <form>
+            <p> Arrays in JavaScript can be used to store ________________.</p>
+            <input type="radio" id="numbers_and_strings" name="arrays_in_JS" value="numbers_and_strings">
+            <label for="numbers_and_strings">Numbers and Strings</label><br>
+            <input type="radio" id="other_arrays" name="arrays_in_JS" value="other_arrays">
+            <label for="other_arrays">Other Arrays</label><br>
+            <input type="radio" id="booleans_2" name="arrays_in_JS" value="booleans_2">
+            <label for="booleans_2">Booleans</label> <br>
+            <input type="radio" id="all" name="arrays_in_JS" value="all">
+            <label for="all">All of the Above</label>
+        </form> 
+    </div>
+
+    <div class="mySlides">
+        <form>
+            <p> String values must be enclosed within ______________ when being assigned to variables.</p>
+            <input type="radio" id="commas" name="string_vals_must" value="commas">
+            <label for="commas">Commas</label><br>
+            <input type="radio" id="curly_brackets2" name="string_vals_must" value="curly_brackets2">
+            <label for="curly_brackets2">Curly Brackets</label><br>
+            <input type="radio" id="quotes2" name="string_vals_must" value="quotes2">
+            <label for="quotes2">Quotes</label> <br>
+            <input type="radio" id="parenthesis2" name="string_vals_must" value="parenthesis2">
+            <label for="parenthesis2">Parenthesis</label>
+        </form> 
+    </div>
+
+    <div class="mySlides">
+        <form>
+            <p> A very useful tool used during development and debugging for printing content to the debugger is:</p>
+            <input type="radio" id="javascript" name="useful_tool" value="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="radio" id="terminal_bash" name="useful_tool" value="terminal_bash">
+            <label for="terminal_bash">Terminal/Bash</label><br>
+            <input type="radio" id="for_loops" name="useful_tool" value="for_loops">
+            <label for="for_loops">For Loops</label> <br>
+            <input type="radio" id="console_log" name="useful_tool" value="console_log">
+            <label for="console_log">Console.Log</label>
+        </form> 
+    </div>
+
+    <div class="mySlides">
+        <p> Results page </p>
+    </div>
+
+    <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    </div>
+
+    <!-- <script src="./assets/JS/questions.js"></script> 
+    <script src="./assets/JS/script.js"></script> --->
+
+    <script>
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+
+    </script>
+
+</body>
+</html> 
+
